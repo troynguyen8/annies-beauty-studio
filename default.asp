@@ -1,1 +1,1 @@
-<% response.redirect ("default.htm") %>
+<% response.redirect ("index.htm") %>
