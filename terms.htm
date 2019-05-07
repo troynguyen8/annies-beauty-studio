@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<title>Annie's Beauty Studio</title>
+<meta name="description" content="Annie's Beauty Studio offers spa and nail services including gel nails, pink and white, shellac. We offer permanent makeup including microblading, embroidery eyebrows, lips, and eyeliner.">
+<meta name="keywords" content="Gel Nails, Solar Nails, Manicure, pedicure, facial, waxing, body, brazillian, eyebrows, skin care, deep clean, eyelash extension, eyelashes, eyeliner, lip liner, lip blush, microblading, lincoln, nebraska, salon, beauty studio, semipermanent makeup, brows transformation, permanent makeup, david nails, sicillia studio, best nail salon, spa, nails spa, annie, beauty, annie beauty salon">
+<link rel="stylesheet" type="text/css" href="css/styles.css" />
+
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+	
+	<!-- For Browser to recognize window size -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+	<script type="text/javascript" language="javascript" src="js/modernizr.custom.10801.js"></script>		
+	<script type="text/javascript" src="js/mobilemenu.js"></script>
+        
+    <!-- mobile menu appears at small device widths -->   
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>	 
+    <link type="text/css" rel="stylesheet" href="css/jquery.mmenu.css" />
+    <script type="text/javascript" src="js/respond.js"></script>
+    <script type="text/javascript" src="js/jquery.mmenu.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+ 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <script type="text/javascript" language="javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
+    </script>    
+
+    <script type="text/javascript">
+    $(function() {
+        var $menu = $('nav#menu'),
+            $html = $('html, body');
+            $menu.mmenu({
+            dragOpen: false
+        });
+        $menu.find('li > a').on('click', function(e) {
+            var href = $(this).attr('href');
+            //	if the clicked link is linked to an anchor, scroll the page to that anchor 
+            if (href.slice(0, 1) == '#') {
+                $menu.one('closed.mm', function() {
+                    setTimeout(function() {
+                        $html.animate({
+                            scrollTop: $(
+                            href).offset()
+                            .top
+                        });
+                    }, 10);
+                });
+            }
+        });
+    });
+    </script>
+   
+</head>
+<body>
+
+<div>
+<div class="header">
+	<a href="default.htm"><img src="siteart/logo4.png" /></a>
+</div>
+
+    	<a id="navicon" class="show-menu-for-mobile" href="#menu">&#9776;</a>   <!-- This is the burger menu icon -->
+        <div id="nav-container">
+			<div id="nav">
+				<ul>
+					<li><a href="default.htm">Home</a></li>
+					<li><a href="prices.htm">Prices</a></li>
+					<li><a href="faq.htm">FAQ</a></li>
+					<li><a href="care.htm">After Care</a></li>
+					<li><a href="terms.htm">Terms & Conditions</a></li>
+					<li><a href="contact.htm">Contact</a></li>
+				</ul>
+			</div>
+               <div style="clear:both;"></div>
+		</div>
+          <div style="clear:both;"></div>
+          
+        <!-- Only displays for smaller devices, when the "burger" is clicked. -->
+        <nav id="menu">   
+				<ul>
+					<li><a href="default.htm">Home</a></li>
+					<li><a href="prices.htm">Prices</a></li>
+					<li><a href="faq.htm">FAQ</a></li>
+					<li><a href="care.htm">After Care</a></li>
+					<li><a href="terms.htm">Terms & Conditions</a></li>
+					<li><a href="contact.htm">Contact</a></li>
+				</ul>
+               <div style="clear:both;"></div>
+        </nav>
+        <!-- End Nav -->
+          <div class="container" style="text-align:left;">
+          	<h1>Terms and Conditions</h1>
+               <div style="clear:both;"></div>
+				Candidates who are seeking permanent makeup and who may be contraindicated are:
+                    <ul>
+                    	<li>Those under 18 years of age</li>
+                         <li>People with diabetes</li>
+                         <li>Pregnant and lactating women</li>
+                         <li>People with glaucoma and people who are taking blood thinning medicins (i.e. aspirin)</li>
+                         <li>People with skin diseases such as psoriasis, eczema and undiagnosed rashes or blisters on the site that is to be treated</li>
+                         <li>People with allergies to makeup or clours</li>
+                         <li>Those with easily triggered postinflammatory hyperpigmentation are not good candidates</li>
+                         <li>Those with transmittable blood conditions like HIV or Hepatitis</li>
+                         <li>Active skin cancer in the area to be tattooed</li>
+                         <li>Are a hemophiliac</li>
+                         <li>Have healing disorders</li>
+                         <li>AHA's (lactic, glycolic, citric, retinoic and tartaric acids) or any OTC creams and lotions for tone correcting, anti-aging, exfoliating, fading can discolor your permanent makeup.</li>
+                         <li>Flu or Cold: Please stay home, reschedule your appointment if you have cold, flu or sinus/respiratory infection</li>
+                         <li>Coumadin: Amount of bleeding and response to topical epinephrine will determine coverage per appointment. If excessive bleeding occurs, extra appointments may be necessary for desired outcome or procedure may not be effective.</li>
+                         <li>Cancers/Chemotherapy: Doctor's clearance may be necessary</li>
+                    </ul>
+                    <br /><hr /><br />
+                    <h5>Laser eye surgery:</h5> Wait about 3 months for eyeliner procedure. All other permanent makeup procedures are ok.<br /><br />
+                    <h5>Juvederm or other "fillers":</h5> Get permanent makeup first or ask your juvederm tech for clearance.<br /><br />
+                    <h5>Shingles (varicella):</h5> If you have shingles on your face, wait several months to get permanent makeup.<br /><br />
+                    <h5>Eyelift or Blepharoplasty:</h5> Wait about 3 months.<br /><br />
+                    <h5>Eyelash Extensions:</h5> AFTER permanent makeup. Or remove them before your procedure.<br /><br />
+                    <h5>Pinkeye:</h5> As soon as their infection has cleared, medication completed.<br /><br />
+                    <h5>Cold Sores:</h5> Clients with a history of cold sores need to pre-medicate with an anti-viral drug (Zoviraz, Valtrex, or Acyclovir) prior to a lip coloring procedure.
+               </div>
+
+</div>
+
+	<div style="clear:both;"></div>
+<div class="footwrap">(402) 805-4106&nbsp;|&nbsp;<a href="mailto:annyabach@yahoo.com">annyabach@yahoo.com</a>&nbsp;|&nbsp;<a href="https://www.facebook.com/anniesbeautystudio/" target="_blank"><img src="siteart/fb.png" /></a></div>
+</body>
+</html>
+ 

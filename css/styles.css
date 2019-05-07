@@ -1,0 +1,362 @@
+﻿html, body, div, span, applet, object, iframe,  
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,  
+a, abbr, acronym, address, big, cite, code,  
+del, dfn, em, font, img, ins, kbd, q, s, samp,  
+small, strike, strong, sub, sup, tt, var,  
+b, u, i, center,  
+dl, dt, dd, ol, ul, li,  
+fieldset, form, label, legend,  
+table, caption, tbody, tfoot, thead, tr, th, td {  
+    margin: 0;  
+    padding: 0;  
+    border: 0;  
+    outline: 0;  
+    font-size: 100%;  
+    background: transparent;  
+}
+
+ol, ul {  
+    list-style: none;  
+}  
+
+blockquote, q {  
+    quotes: none;  
+}  
+
+blockquote:before, blockquote:after,  
+q:before, q:after {  
+    content: '';  
+}  
+  
+/* remember to define focus styles! */  
+:focus {  
+    outline: 0;  
+}  
+  
+/* tables still need 'cellspacing="0"' in the markup */  
+table {  
+    border-collapse: collapse;  
+    border-spacing: 0;  
+} 
+
+
+/******** Basic Styles ********/
+
+@font-face {
+  font-family: 'CenturyGothic';
+  src: url('../fonts/CenturyGothic.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/CenturyGothic.woff') format('woff'),
+  url('../fonts/CenturyGothic.ttf')  format('truetype'),
+  url('../fonts/CenturyGothic.svg#CenturyGothic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'KaushanScript-Regular';
+  src: url('../fonts/KaushanScript-Regular.eot?#iefix') format('embedded-opentype'), 
+  	  url('../fonts/KaushanScript-Regular.otf')  format('opentype'),
+	  url('../fonts/KaushanScript-Regular.woff') format('woff'),
+	  url('../fonts/KaushanScript-Regular.ttf')  format('truetype'),
+	  url('../fonts/KaushanScript-Regular.svg#KaushanScript-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: 'CenturyGothic';
+    font-size:18px;
+    line-height:24px;
+    margin:0px auto;
+    height:auto;
+    width:100%;
+    background-color:#000;
+    color:#fff;
+    overflow-x:hidden;
+}
+
+p {padding:20px;}
+
+h1 {font-family: 'KaushanScript-Regular'; font-size:38px; color:#fe0000; padding:20px 0px; text-align:center;}
+h2 {font-family: 'KaushanScript-Regular'; font-size:30px; line-height: 38px; color:#fff;}
+h3 {font-family: 'KaushanScript-Regular'; font-size:28px; line-height: 36px;}
+h4 {font-family: 'KaushanScript-Regular'; font-size:26px;}
+h5 {font-family: 'CenturyGothic'; font-size:22px; text-transform:uppercase; color:#fe0000;}
+
+a:link {text-decoration: underline; color:#fff;}
+a:visited {text-decoration: none; color:#fff;}
+a:hover {text-decoration: none; color:#fe0000;}
+a:active {text-decoration: none; color:#fff;}
+
+
+.header {
+	max-width:1020px;
+	width:100%;
+	margin:0 auto;
+	text-align:center;
+}
+
+.header img {
+	max-width:100%;
+	height:auto;
+}
+
+.wrapper {
+	max-width:1020px;
+	width:90%;
+	margin:0 auto;
+}
+
+.bigger {
+	max-width:334px;
+	width:100%;
+	height:auto;
+}
+
+.contact {
+	padding:20px;
+	float:left;
+	display:block;
+	max-width:450px;
+	width:100%;
+}
+.container {
+	margin:0 auto;
+	max-width:1000px;
+	width:100%;
+	text-align:center;
+	margin-bottom:50px;
+}
+
+.button {
+	width:150px;
+	padding:20px;
+	margin: 0 auto;
+	max-width:100%;
+	background-color:#fe0000;
+	text-transform:uppercase;
+	border-radius:25px;
+}
+
+ul li {
+	margin-left:35px;
+	padding:5px 0px;
+	list-style:none;
+}
+
+/******MAIN NAVIGATION same as used for CMS******/
+/* This horizontal navigation has 4 dropdown levels, but you can change it to include more levels if necessary.*/
+ 
+#nav-container { /* container to center the nav within a standard width of 1020px, or adjust to width of your site. Links will always float left or right. */
+    text-align:center;
+    background:#272727;
+    -moz-box-shadow:  0 -1px 10px #000;
+    -webkit-box-shadow: 0 -1px 10px #000;
+    box-shadow: 0 -1px 10px #000;
+    width:1020px;
+    max-width:100%;
+    margin:0 auto;
+}
+  
+#nav {
+    position:relative;
+    display:block;  
+    z-index:9000000000000000990909099090;
+    margin:0 auto 0 auto;
+    padding:0 0 0 0;
+    text-align:center;
+    width: 100%;
+}
+  
+#nav ul, #nav li {
+    list-style: none;  
+    margin:0 0 0 0;
+    padding:0 0 0 0;  
+}
+  
+#nav ul li {
+    display: block;
+    position: relative;
+    float:left;
+    text-align:center;
+}
+  
+#nav li ul {
+    display: none;
+}
+  
+  
+#nav ul li a { /* appearance of the first-level links */
+    display: block;
+	text-decoration: none;
+    color: #fff;
+    font-size:18px;
+    line-height:24px;
+    transition:all .2s ease-in-out; -moz-transition:all .2s ease-in-out; -webkit-transition:all .2s ease-in-out;
+    padding:15px 39px;  
+    height: 1%;
+    text-transform: uppercase;
+    background:url('../siteart/nav-bg.png') repeat-x;
+    border-right: 1px solid #000;
+    border-left: 1px solid #555;
+    text-align:center;
+    font-family: 'CenturyGothic';
+}
+ 
+ 
+#nav ul li a:hover { /* appearance of the first-level links on hover */
+    height: 1%; 
+    color:#fff; 
+    background: #fe0000;
+}
+  
+  
+  
+#nav ul li li a { /* appearance of the sub-level links */
+    width:300px;
+    padding:8px 0 8px 15px;
+    text-align:left;
+    background:#fe0000;
+    border-bottom:1px #555 solid;  
+}
+#nav ul li li a:hover { /* appearance of the sub-level links on hover */
+    color:#df393b; 
+    background:#fff;    
+}
+  
+  
+  
+/* Optional-use, Begin targeting styles of first and last links */
+#nav ul li:last-child  { /* Optional-use, this targets last li */
+
+}
+#nav ul li:last-child a {
+    border-right: 1px solid #000;
+}
+#nav ul li:first-child  { /* Optional-use, this targets first li */
+}
+  
+/* Optional-use, cancells out border for subnav li containers*/
+#nav ul li li:last-child  {
+    border-left:0;
+    border-right:0;
+}
+#nav ul li li:last-child a {
+    border-right: 1px solid #555;
+}
+#nav ul li li:first-child  {
+    border-left:0;
+    border-right:0;
+}
+/* Optional-use, End targeting styles of first and last links */
+  
+  
+  
+/* Unless needing to do something extra or experimental, DON'T edit these positioning styles below! */
+#nav ul ul {
+    display: none;
+    position: absolute; 
+    top:100%;
+    left:0;
+}
+  
+#nav ul ul ul {
+    position: absolute; 
+    left: 100%;
+    top:0; 
+}
+  
+#nav ul li:hover > ul {  
+    display: block;
+    line-height:18px; /* make sure your line-height always matches that of your main link styles!*/
+    z-index: 100;
+    background:#4b0000; /* make sure your background color always matches your link styles!*/
+}
+  
+#nav ul ul li {
+    float: none; 
+    position: relative;
+}
+  
+/******MAIN NAVIGATION END******/
+
+.show-menu-for-mobile {display:none;}  /* At most larger screen widths, the burger icon for the mobile menu won't be displayed. */
+
+
+
+a.footerlink:link, a.footerlink:visited, a.footerlink:active{text-decoration:none; font-family:osp-dindin;font-size:14px;}
+a.footerlink:hover {text-decoration:none; font-family:osp-dindin;font-size:14px;}
+.footwrap {max-width:100%; width:1020px; text-align:center; margin:0 auto; padding-bottom:30px; font-family:"CenturyGothic"; font-size:14px; color:#fe0000;}
+
+/************************************************ Responsive Styles **/
+
+@media screen and (max-width: 1020px) and (min-width:321px) {
+.show-menu-for-mobile {display: block;}
+.hide-for-mobile {display:none;}
+.hide {display:none;}
+/******************styles for the main site navigation during mobile display*************/
+#navicon {
+	float: left;
+	font-size: 1.5em;
+	text-decoration: none;
+	position: relative;
+	z-index: 9999999999999999999999999;
+	margin: 1rem 0 1rem 0.5rem;
+	color:#fff;
+	display:block;
+}
+#nav  {display:none;}
+
+.container {
+	width:90%;
+	max-width:100%;
+}
+
+}
+ 
+ 
+
+@media screen and (max-width: 321px){
+.show-menu-for-mobile {display: block;}
+.hide-for-mobile {display:none;}
+.hide {display:none;}
+/******************styles for the main site navigation during mobile display*************/
+#navicon {
+	float: left;
+	font-size: 1.5em;
+	text-decoration: none;
+	position: relative;
+	z-index: 99999999999999999;
+	margin: 1rem 0 1rem 0.5rem;
+	color:#fff;
+	display:block;
+}
+#nav  {display:none;}
+
+ul li {
+	margin-left:0px;
+}
+
+body {font-size:16px;}
+
+h1 {font-size:28px; padding:20px 0px;}
+h2 {font-size:20px; padding-bottom:20px;}
+h3 {font-size:18px; padding-bottom:20px;}
+h4 {font-size:26px;}
+h5 {font-size:18px;}
+
+.contact {
+	padding:0px;
+	float:none;
+}
+
+a.footerlink:link, a.footerlink:visited, a.footerlink:active{font-size:10px;}
+a.footerlink:hover {font-size:10px;}
+.footwrap {font-size:10px;}
+
+.container {
+	width:90%;
+	max-width:100%;
+}
+
+
+}

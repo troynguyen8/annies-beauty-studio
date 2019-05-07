@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<title>Annie's Beauty Studio</title>
+<meta name="description" content="Annie's Beauty Studio offers spa and nail services including gel nails, pink and white, shellac. We offer permanent makeup including microblading, embroidery eyebrows, lips, and eyeliner.">
+<meta name="keywords" content="Gel Nails, Solar Nails, Manicure, pedicure, facial, waxing, body, brazillian, eyebrows, skin care, deep clean, eyelash extension, eyelashes, eyeliner, lip liner, lip blush, microblading, lincoln, nebraska, salon, beauty studio, semipermanent makeup, brows transformation, permanent makeup, david nails, sicillia studio, best nail salon, spa, nails spa, annie, beauty, annie beauty salon">
+<link rel="stylesheet" type="text/css" href="css/styles.css" />
+
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+	
+	<!-- For Browser to recognize window size -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+	<script type="text/javascript" language="javascript" src="js/modernizr.custom.10801.js"></script>		
+	<script type="text/javascript" src="js/mobilemenu.js"></script>
+        
+    <!-- mobile menu appears at small device widths -->   
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>	 
+    <link type="text/css" rel="stylesheet" href="css/jquery.mmenu.css" />
+    <script type="text/javascript" src="js/respond.js"></script>
+    <script type="text/javascript" src="js/jquery.mmenu.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+ 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    
+    <script type="text/javascript">
+    $(function() {
+        var $menu = $('nav#menu'),
+            $html = $('html, body');
+            $menu.mmenu({
+            dragOpen: false
+        });
+        $menu.find('li > a').on('click', function(e) {
+            var href = $(this).attr('href');
+            //	if the clicked link is linked to an anchor, scroll the page to that anchor 
+            if (href.slice(0, 1) == '#') {
+                $menu.one('closed.mm', function() {
+                    setTimeout(function() {
+                        $html.animate({
+                            scrollTop: $(
+                            href).offset()
+                            .top
+                        });
+                    }, 10);
+                });
+            }
+        });
+    });
+    </script>
+   
+</head>
+<body>
+
+<div>
+<div class="header">
+	<a href="default.htm"><img src="siteart/logo4.png" /></a>
+</div>
+    	<a id="navicon" class="show-menu-for-mobile" href="#menu">&#9776;</a>   <!-- This is the burger menu icon -->
+        <div id="nav-container">
+			<div id="nav">
+				<ul>
+					<li><a href="default.htm">Home</a></li>
+					<li><a href="prices.htm">Prices</a></li>
+					<li><a href="faq.htm">FAQ</a></li>
+					<li><a href="care.htm">After Care</a></li>
+					<li><a href="terms.htm">Terms & Conditions</a></li>
+					<li><a href="contact.htm">Contact</a></li>
+				</ul>
+			</div>
+               <div style="clear:both;"></div>
+		</div>
+          <div style="clear:both;"></div>
+          
+        <!-- Only displays for smaller devices, when the "burger" is clicked. -->
+        <nav id="menu">   
+				<ul>
+					<li><a href="default.htm">Home</a></li>
+					<li><a href="prices.htm">Prices</a></li>
+					<li><a href="faq.htm">FAQ</a></li>
+					<li><a href="care.htm">After Care</a></li>
+					<li><a href="terms.htm">Terms & Conditions</a></li>
+					<li><a href="contact.htm">Contact</a></li>
+				</ul>
+               <div style="clear:both;"></div>
+        </nav>
+        <!-- End Nav -->
+        
+          <div style="clear:both;"></div>
+          <div class="container">
+          	<h1>Microblading NE Permanent Makeup</h1><br />
+               <div style="clear:both;"></div>
+               
+               My eyebrow method is a tattoo done by hand and not machine which is called microblading, also known as eyebrow embroidery.<br /><br />
+With this method I can create almost any look, from a very natural light finish or a beautifully bold brow.<br /><br />
+Microblading is great not just for anyone looking to improve or enhance the appearance of their brows, but also for those with fine and gappy brows, and even those suffering from alopecia, as sparse or missing brows can be completely restored. The strokes are more visible when there is high contrast between skin and ink color, and they can last 2-3 years depending on the skin type and color chosen.<br /><br />
+			<div style="clear:both;"></div>
+               <div class="button"><a href="microblading.htm">VIEW PHOTOS</a></div>
+			<br /><hr /><br />
+               For eyeliner itself can be very thin or as thick as your own natural lashes and does not have a flick or extended tip. This is just to fill in between the lashes to create the illusion of thicker, darker, and completely full lashes without looking lined or like obvious make-up.<br /><br />
+               This can be done just on top or the bottom or on both lashes. No one will know you've had anything done but your eyes will be more permanently defined and gorgeous.<br /><br />
+               Lash enhancement is great for everyone, especially those with really gappy or sparse lashes as thicker lashes accentuate the beauty of the eyes and make them look more youthful.<br /><br />
+			<div style="clear:both;"></div>
+               <div class="button"><a href="eyeliner.htm">VIEW PHOTOS</a></div>
+			<br /><hr /><br />
+               For lips, I offer lip-blush tattoo, this is to define the edges of the lips and to create a better contour and symmetry. I only use the most natural pigments as this to fake a fuller lip naturally, the colour is most concentrated around the border then ombre's into the center of the lips to blend seamlessly with the colour of your own lips.<br /><br />
+               Great for those who have lost colour around the edges of their lips or who have really pale, colourless lips or who will sometimes illuminate the need for lip fillers. Lip blush tattoo can last 3-5 years.<br /><br />
+			<div style="clear:both;"></div>
+               <div class="button"><a href="lips.htm">VIEW PHOTOS</a></div>
+			<br /><hr /><br />
+
+
+
+
+
+
+               </div>
+
+</div>
+	<div style="clear:both;"></div>
+<div class="footwrap">(402) 805-4106&nbsp;|&nbsp;<a href="mailto:annyabach@yahoo.com">annyabach@yahoo.com</a>&nbsp;|&nbsp;<a href="https://www.facebook.com/anniesbeautystudio/" target="_blank"><img src="siteart/fb.png" /></a></div>
+</body> 
+</html>
